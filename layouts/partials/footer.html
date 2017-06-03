@@ -8,7 +8,7 @@
             {{ if isset .Site.Params "about_us_markdown" }}
               {{ .Site.Params.about_us_md | markdownify }}
             {{ else }}
-              {{ .Site.Params.about_us }}
+              {{ .Site.Params.about_us | safeHTML }}
             {{ end }}
 
             <hr class="hidden-md hidden-lg hidden-sm">
