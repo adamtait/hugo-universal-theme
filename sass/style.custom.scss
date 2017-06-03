@@ -1,4 +1,4 @@
-// style.css
+// style.custom.scss
 //
 // the full details. adapted from https://github.com/devcows/hugo-universal-theme/blob/master/static/css/style.default.css, which was clearly originally generated using a CSS preprocessor (of which the current most popular example is SASS).
 
@@ -817,8 +817,6 @@ fieldset[disabled] .btn-template-primary.active {
   width: 100%;
   height: 100%;
   background: $primary-color;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
 }
 .jumbotron h1,
 .jumbotron h2,
@@ -2928,7 +2926,7 @@ fieldset[disabled] .btn-template-primary.active {
   line-height: 20px;
   height: 62px;
 
-  img { height: 62px; }
+  img { height: 50px; }
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
