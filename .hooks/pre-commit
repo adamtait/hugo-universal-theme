@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+files=`git diff --cached --name-status sass/`
+
+if [[ $files != "" ]]; then
+  touch .sass_changes
+fi

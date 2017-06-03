@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo 
+
+if [[ -a .sass_changes ]]; then
+    rm .sass_changes
+    ./build.sh
+    git commit -m "generated CSS content. see previous commit for SASS changes."
+fi
