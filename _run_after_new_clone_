@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 echo "Setting up git commit hooks for building CSS from SASS"
-ln -s .hooks/pre-commit .git/hooks/
-ln -s .hooks/post-commit .git/hooks/
+ln -s ../../.hooks/pre-commit .git/hooks/
+ln -s ../../.hooks/post-commit .git/hooks/
 echo "done."
 
 # check for SASS command
