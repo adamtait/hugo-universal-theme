@@ -26,7 +26,12 @@
                                 <div class="icon"><i class="fa fa-quote-left"></i>
                                 </div>
                                 <div class="name-picture">
-                                    <img class="" alt="" src="{{ .avatar | absURL }}">
+                                  {{ if .avatar }}
+                                  <img class="" alt="" src="{{ .avatar | absURL }}">
+                                  {{ end }}
+                                  {{ if .icon }}
+                                  <div class="icon"><i class="fa {{ .icon }}"></i></div>
+                                  {{ end }}
                                     <h5>{{ .name }}</h5>
                                     <p>{{ .position }}</p>
                                 </div>
