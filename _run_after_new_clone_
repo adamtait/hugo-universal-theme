@@ -6,4 +6,4 @@ ln -s .hooks/post-commit .git/hooks/
 echo "done."
 
 # check for SASS command
-command -v sass >/dev/null 2>&1 || { echo >&2 "This Hugo theme requires 'sass' but it's not installed. Go to http://sass-lang.com/install and get it installed"; }
+command -v sass >/dev/null 2>&1 || { echo >&2 -e "\nERROR: This theme requires 'sass' but it's not installed. Go to http://sass-lang.com/install and get it installed.\n"; }
