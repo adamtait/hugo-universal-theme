@@ -2927,6 +2927,8 @@ fieldset[disabled] .btn-template-primary.active {
   font-size: 18px;
   line-height: 20px;
   height: 62px;
+
+  img { height: 62px; }
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -3065,7 +3067,7 @@ fieldset[disabled] .btn-template-primary.active {
   }
 }
 .navbar-default {
-  background-color: $white-all;
+  background-color: $navbar-color;
   border-color: #cccccc;
   border-bottom: none;
 }
