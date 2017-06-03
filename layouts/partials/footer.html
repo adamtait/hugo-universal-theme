@@ -4,7 +4,7 @@
       {{ if isset .Site.Params "about_us" }}
       <div class="col-md-4 col-sm-6">
         <h4>{{ i18n "aboutUs" }}</h4>
-        {{ if isset .Site.Params.about_us.content_type }}
+        {{ if isset .Site.Params.about_us "content_type" }}
           {{ if eq .Site.Params.about_us.content_type "html" }}
             {{ .Site.Params.about_us.text | safeHTML }}
           {{ else if eq .Site.Params.about_us.content_type "emoji" }}
