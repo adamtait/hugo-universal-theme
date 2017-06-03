@@ -5,6 +5,7 @@ npm-debug.log
 .sass-cache
 */.sass-cache
 
+.sass_changes
 
 # Created by https://www.gitignore.io/api/emacs
 
