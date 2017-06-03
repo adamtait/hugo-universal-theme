@@ -2,3 +2,33 @@
 public/
 npm-debug.log
 /node_modules/*
+.sass-cache
+*/.sass-cache
+
+
+# Created by https://www.gitignore.io/api/emacs
+
+### Emacs ###
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+auto-save-list
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
+
+# End of https://www.gitignore.io/api/emacs
