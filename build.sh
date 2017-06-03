@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 
-# bulid CSS from SASS
-sass --update sass:static/css --sourcemap=none
+
+css_dir="${PWD}/static/css"
+
+echo "Building CSS from SASS"
+sass --update sass:$css_dir --sourcemap=none
+git add $css_dir
