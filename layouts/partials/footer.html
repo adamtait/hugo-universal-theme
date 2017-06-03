@@ -1,21 +1,25 @@
 <footer id="footer">
     <div class="container">
 
-        {{ if isset .Site.Params "about_us" }}
-        <div class="col-md-4 col-sm-6">
-            <h4>{{ i18n "aboutUs" }}</h4>
-
-            {{ if isset .Site.Params "about_us_markdown" }}
-              {{ .Site.Params.about_us_md | markdownify }}
-            {{ else }}
-              {{ .Site.Params.about_us | safeHTML }}
-            {{ end }}
-
-            <hr class="hidden-md hidden-lg hidden-sm">
-
-        </div>
-        <!-- /.col-md-4 -->
+      {{ if isset .Site.Params "about_us" }}
+      <div class="col-md-4 col-sm-6">
+        <h4>{{ i18n "aboutUs" }}</h4>
+        {{ if isset .Site.Params.about_us.content_type }}
+          {{ if eq .Site.Params.about_us.content_type "html" }}
+            {{ .Site.Params.about_us.text | safeHTML }}
+          {{ else if eq .Site.Params.about_us.content_type "emoji" }}
+            {{ .Site.Params.about_us.text | emojify }}
+          {{ else }}
+            {{ .Site.Params.about_us.text | markdownify }}
+          {{ end }}
+          
         {{ end }}
+        <hr class="hidden-md hidden-lg hidden-sm">
+      </div>
+      <!-- /.col-md-4 -->
+      {{ end }}
+
+
 
         <div class="col-md-4 col-sm-6">
 
