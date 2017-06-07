@@ -14,7 +14,10 @@
                             {{ .description | safeHTML }}
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="{{ .image }}" alt="">
+                          <img class="img-responsive" src="{{ .image }}" alt="">
+                          {{ if isset .image_attribution }}
+                          {{ .image_attribution | safeHTML }}
+                          {{ end }}
                         </div>
                     </div>
                 </div>
